@@ -41,7 +41,6 @@ int		handle_specialchar(const char **format, format_t *data)
 			(*format)++;
 			if (data->fct_tab[i].fct)
 				return (data->fct_tab[i].fct((void *)data));
-			printf("Function not available yet\n");
 			return (-1);
 		}
 		/* code */
