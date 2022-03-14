@@ -126,7 +126,7 @@ char	*printf_numbers(long nb, short base, format_t *data)
 		return (NULL);
 	for (i = 0; i < 64; i++)
 		str[i] = '\0';
-	if (base == 10 && nb < 0)
+	if (data->is_signed)
 		get_signed_number(str, nb, base);
 	else if (data->nb_bytes == 2)
 		get_unsigned_number(str, (unsigned short)nb, base);

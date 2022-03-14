@@ -6,6 +6,8 @@
  */
 void	reset_flags(format_t *data)
 {
+	data->is_signed = 1;
+	data->nb_bytes = 4;
 	data->minus_flag = 0;
 	data->plus_flag = 0;
 	data->space_flag = 0;
@@ -83,10 +85,10 @@ void	init_struct(format_t *data)
 	data->fct_tab[SPEC_d].fct = handle_spec_di;
 	data->fct_tab[SPEC_i].fct = handle_spec_di;
 	data->fct_tab[SPEC_b].fct = handle_spec_b;
-	data->fct_tab[SPEC_u].fct = NULL;
-	data->fct_tab[SPEC_o].fct = NULL;
-	data->fct_tab[SPEC_x].fct = NULL;
-	data->fct_tab[SPEC_X].fct = NULL;
+	data->fct_tab[SPEC_u].fct = handle_spec_u;
+	data->fct_tab[SPEC_o].fct = handle_spec_o;
+	data->fct_tab[SPEC_x].fct = handle_spec_x;
+	data->fct_tab[SPEC_X].fct = handle_spec_X;
 	data->fct_tab[SPEC_S].fct = NULL;
 	data->fct_tab[SPEC_p].fct = NULL;
 	data->fct_tab[SPEC_r].fct = NULL;

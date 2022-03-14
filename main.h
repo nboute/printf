@@ -61,6 +61,7 @@ typedef struct	format_functions_s
 /**
  * struct format_s - Structure containg general data relevant to the function
  * @nb_bytes: Number of bytes used by variable
+ * @is_signed: Tells is number is signed or unsigned
  * @args: List of arguments
  * @minus_flag: Tells state of flag '-'
  * @plus_flag: Tells state of flag '+'
@@ -80,6 +81,7 @@ typedef struct	format_functions_s
 typedef struct	format_s
 {
 	va_list				args;
+	unsigned char		is_signed;
 	int					nb_bytes;
 	unsigned char		minus_flag;
 	unsigned char		plus_flag;
@@ -109,6 +111,10 @@ int		handle_spec_di(void *ptr);
 int		handle_spec_b(void *ptr);
 int		handle_spec_p(void *ptr);
 int		handle_spec_perc(void *ptr);
+int		handle_spec_u(void *ptr);
+int		handle_spec_o(void *ptr);
+int		handle_spec_x(void *ptr);
+int		handle_spec_X(void *ptr);
 
 int		_strlen(char *str);
 char	*_strncat(char *dest, const char *src, int n);
