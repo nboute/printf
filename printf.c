@@ -41,10 +41,13 @@ int		handle_specialchar(const char **format, format_t *data)
 			(*format)++;
 			if (data->fct_tab[i].fct)
 				return (data->fct_tab[i].fct((void *)data));
+			printf("Function not available yet\n");
 			return (-1);
 		}
 		/* code */
 	}
+	if (**format)
+		write_buffer((*format) - 1, 1, data);
 	return (-1);
 }
 
@@ -112,6 +115,11 @@ int		_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			ret = handle_specialchar(&format, &data);
+			if (!*format && ret == -1)
+			{
+				write_buffer(NULL, 0, &data);
+				return (-1);
+			}
 		}
 		if (ret)
 		{
