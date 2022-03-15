@@ -17,7 +17,7 @@ int		handle_spec_c(void *ptr)
 	s = format_string(c, data, 0);
 	if (!s)
 		return (-1);
-	write_buffer(c, 1, data);
+	write_buffer(s, _strlen(s), data);
 	free(s);
 	return (0);
 }
