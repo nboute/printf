@@ -83,7 +83,8 @@ size_t		read_flags(const char *format, format_t *data)
 		data->width_flag = _atoi(format + len);
 		if (data->width_flag < 0)
 			data->width_flag = 0;
-		len++;
+		while (_isdigit(format[len]))
+			len++;
 	}
 	else if (format[len] == '*')
 	{

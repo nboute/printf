@@ -9,11 +9,16 @@ int		handle_spec_c(void *ptr)
 {
 	format_t	*data;
 	char		c[2];
+	char		*s;
 
 	data = (format_t *)ptr;
 	c[0] = va_arg(data->args, int);
 	c[1] = '\0';
+	s = format_string(c, data, 0);
+	if (!s)
+		return (-1);
 	write_buffer(c, 1, data);
+	free(s);
 	return (0);
 }
 
@@ -31,7 +36,11 @@ int		handle_spec_s(void *ptr)
 	s = va_arg(data->args, char *);
 	if (!s)
 		s = "(null)";
+	s = format_string(s, data, 0);
+	if (!s)
+		return (-1);
 	write_buffer(s, _strlen(s), data);
+	free(s);
 	return (0);
 }
 

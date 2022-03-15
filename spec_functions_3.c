@@ -61,6 +61,7 @@ int		handle_spec_S(void *ptr)
 	for (i = 0; i < s2len; i++)
 		s2[i] = '\0';
 	write_spec_S(s, s2);
+	s2 = format_string(s2, data, 1);
 	write_buffer(s2, s2len, data);
 	free(s2);
 	return (0);
