@@ -63,24 +63,17 @@ size_t		read_flags(const char *format, format_t *data)
 	int		len;
 
 	len = 0;
-	if (format[len] == '-')
+	while (format[len] == '-' || format[len] == '+' || format[len] == ' '
+		|| format[len] == '0' || format[len] == '#')
 	{
-		data->minus_flag = 1;
-		len++;
-	}
-	if (format[len] == '+')
-	{
-		data->minus_flag = 1;
-		len++;
-	}
-	if (format[len] == ' ')
-	{
-		data->space_flag = 1;
-		len++;
-	}
-	if (format[len] == '0')
-	{
-		data->zero_flag = 1;
+		if (format[len] == '-')
+			data->minus_flag = 1;
+		if (format[len] == '+')
+			data->plus_flag = 1;
+		if (format[len] == ' ')
+			data->space_flag = 1;
+		if (format[len] == '0')
+			data->zero_flag = 1;
 		len++;
 	}
 	if (_isdigit(format[len]))
