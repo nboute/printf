@@ -37,7 +37,7 @@ void	get_signed_number(char *str, long nb, short base)
  * @str: String to write number in
  * @nb: Number
  * @base: Base to write number in
- * @returns {any}
+ * @upper: If base is higher than 10, tells if letters should be uppercase
  */
 void	get_unsigned_number(char *str, unsigned long nb, short base, int upper)
 {
@@ -129,7 +129,7 @@ char	*printf_numbers(long nb, short base, format_t *data)
 		return (NULL);
 	for (i = 0; i < 64; i++)
 		str[i] = '\0';
-	if (data->is_signed)
+	if (data->is_sign)
 		get_signed_number(str, nb, base);
 	else if (data->nb_bytes == 2)
 		get_unsigned_number(str, (unsigned short)nb, base, data->upcase_flag);

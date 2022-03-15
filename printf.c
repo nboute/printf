@@ -6,7 +6,7 @@
  */
 void	reset_flags(format_t *data)
 {
-	data->is_signed = 1;
+	data->is_sign = 1;
 	data->nb_bytes = 4;
 	data->minus_flag = 0;
 	data->plus_flag = 0;

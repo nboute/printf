@@ -47,7 +47,7 @@ int	handle_spec_di(void *ptr)
 	char		*str;
 
 	data = (format_t *)ptr;
-	data->is_signed = 1;
+	data->is_sign = 1;
 	if (data->long_flag == 1)
 	{
 		nb = (long)va_arg(data->args, long);
