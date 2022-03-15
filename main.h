@@ -131,7 +131,7 @@ char	*_strdup(char *str);
 char	*_strcat(char *dest, char *src);
 int		_isdigit(int c);
 int		_atoi(const char *s);
-int		_isprint(unsigned char c);
+int		_isprint(char c);
 void	rev_string(char *s);
 char	*rot13(char *s);
 
