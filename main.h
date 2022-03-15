@@ -115,6 +115,7 @@ int		handle_spec_u(void *ptr);
 int		handle_spec_o(void *ptr);
 int		handle_spec_x(void *ptr);
 int		handle_spec_X(void *ptr);
+int		handle_spec_p(void *ptr);
 
 int		_strlen(char *str);
 char	*_strncat(char *dest, const char *src, int n);

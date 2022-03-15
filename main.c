@@ -70,5 +70,16 @@ int		main(void)
 
 	printf("|X:|{%d}\n", _printf("%X", 4285798235));
 	printf("|X:|{%d}\n", printf("%X", 4285798235));
+
+	printf("|p:|{%d}\n", _printf("%p", 0x0));
+	printf("|p:|{%d}\n", printf("%p", 0x0));
+
+
+	printf("|p:|{%d}\n", _printf("%p", (void*)0x21951));
+	printf("|p:|{%d}\n", printf("%p", (void*)0x21951));
+
+
+	printf("|p:|{%d}\n", _printf("%p", (void*)-1));
+	printf("|p:|{%d}\n", printf("%p", (void*)-1));
 	return (0);
 }
