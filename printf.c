@@ -28,7 +28,7 @@ void	reset_flags(format_t *data)
 
 size_t		read_flags(const char *format, format_t *data)
 {
-	size_t	len;
+	int		len;
 	/**
 	 * Order: '-', '+', space, '#', '0', width, precision, length, specifier
 	 *
@@ -115,7 +115,6 @@ size_t		read_flags(const char *format, format_t *data)
 int		handle_specialchar(const char **format, format_t *data)
 {
 	int			i;
-	char		*str;
 	size_t		len, clen;
 
 	reset_flags(data);

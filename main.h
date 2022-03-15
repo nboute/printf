@@ -126,7 +126,7 @@ int		_strclen(const char *str, char c);
 char	*_strdup(char *str);
 char	*_strcat(char *dest, char *src);
 int		_isdigit(int c);
-int		_atoi(char *s);
+int		_atoi(const char *s);
 
 
 #endif /* __MAIN_H__ */

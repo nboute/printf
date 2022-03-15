@@ -56,7 +56,7 @@ int		_isdigit(int c)
  * Return: integer format of string
  */
 
-int	_atoi(char *s)
+int	_atoi(const char *s)
 {
 	int	sign;
 	int	nb;
