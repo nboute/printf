@@ -177,7 +177,7 @@ int	handle_spec_p(void *ptr)
 		str = format_string("(nil)", data, 0);
 		if (!str)
 			return (-1);
-		write_buffer("(nil)", 5, data);
+		write_buffer(str, _strlen(str), data);
 		free(str);
 		return (0);
 	}
