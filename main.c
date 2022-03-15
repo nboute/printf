@@ -81,5 +81,26 @@ int		main(void)
 
 	printf("|p:|{%d}\n", _printf("%p", (void*)-1));
 	printf("|p:|{%d}\n", printf("%p", (void*)-1));
+
+
+	printf("|hd:|{%d}\n", _printf("%hd", 65537));
+	printf("|hd:|{%d}\n", printf("%hd", 65537));
+
+
+	printf("|ld:|{%d}\n", _printf("%ld", 2147483647));
+	printf("|ld:|{%d}\n", printf("%ld", 2147483647));
+
+
+	printf("|%%l:|{%d}\n", _printf("%l"));
+	printf("|%%l:|{%d}\n", printf("%l"));
+
+	printf("|%%h:|{%d}\n", _printf("%h"));
+	printf("|%%h:|{%d}\n", printf("%h"));
+
+	printf("|%%lr:|{%d}\n", _printf("%lr"));
+	printf("|%%lr:|{%d}\n", printf("%lr"));
+
+	printf("|%%hr:|{%d}\n", _printf("%hr"));
+	printf("|%%hr:|{%d}\n", printf("%hr"));
 	return (0);
 }
