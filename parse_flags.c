@@ -91,8 +91,7 @@ size_t		read_flags(const char *format, format_t *data)
 		data->width_flag = va_arg(data->args, int);
 		if (data->width_flag < 0)
 			data->width_flag = 0;
-		while (_isdigit(format[len]))
-			len++;
+		len++;
 	}
 	return (read_flags_p2(format, data, len));
 }
