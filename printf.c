@@ -160,6 +160,7 @@ int		_printf(const char *format, ...)
 			format += len;
 		}
 	}
-	write_buffer(NULL, 0, &data);
+	if (data.bufferlen)
+		write_buffer(NULL, 0, &data);
 	return (data.nb_written_bytes);
 }
