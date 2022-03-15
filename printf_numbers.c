@@ -102,7 +102,7 @@ char	*format_number(char *str, long nb, short base, format_t *data)
 		buff[0] = data->plus_flag ? '+' : ' ';
 		i = i;
 	}
-	if (data->hash_flag == 1)
+	if (data->hash_flag == 1 && nb)
 	{
 		if (base == 2 || base == 8 || base == 16)
 			buff[0] = '0';

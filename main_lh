@@ -182,7 +182,5 @@ int		main(void)
 	printf("|%d\n", _printf("%#s", "Hello"));
 	printf("|%d\n", printf("%#s", "Hello"));
 
-	printf("|%d\n", _printf("%#s", "Hello"));
-	printf("|%d\n", printf("%#s", "Hello"));
 	return (0);
 }
