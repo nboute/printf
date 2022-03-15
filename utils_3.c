@@ -5,9 +5,9 @@
  * @c: character
  * Return: 1 if printable, 0 if not
  */
-int	_isprint(unsigned char c)
+int	_isprint(char c)
 {
-	if (c < 32 || c >= 127)
+	if ((c > 0 && c < 32) || c >= 127)
 		return (0);
 	return (1);
 }
