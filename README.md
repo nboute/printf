@@ -7,7 +7,15 @@
   </head
       <h1 style="color: crimson;text-align: center;"> Write our own _printf</h1>
         
+## Theory and Practice
 
+- Stéphanie Metche Serpault Directrice Holberton School Toulouse at Salon de l Etudiant with
+
+- Nicolas Bouté
+- Siham Badyine
+
+
+<p><img src="https://media-exp1.licdn.com/dms/image/C5622AQGTBgMxO9XJlg/feedshare-shrink_1280/0/1647092494592?e=1649894400&v=beta&t=aFyQ_-YNA--W3q7mf7CcCvHPDZFAU3CGFPlNxL6usfQ" alt="the team with directrice Holberton School Toulouse" width="142px"></p> 
 
 * [Introduction](#introduction)
 * [Steps](#steps)
@@ -41,7 +49,11 @@ In the train for reach, le "Salon de l'etudiant 2022 " to represent Holberton Sc
 First of all, we drawn a flowchart
 This allows us for a more global vision and to record tasks more quickly
 
-Those are the format identifier's needed to write:
+## Flowchart
+
+<p><img src="Images/flowchart.png" alt="flowchart" width="350 px"></p> 
+
+## Those are the format identifiers needed to write:
 
 %  | type |
 ---|------|
@@ -65,13 +77,8 @@ Those are the format identifier's needed to write:
 
 
 
-
-
-
-## Flowchart
-
-
 ## Integers
+
 
 
 
@@ -79,14 +86,16 @@ Those are the format identifier's needed to write:
 
 
 
-##Ressources
+## Ressources
 
 * [_printf overview]()
 * [secrets of printf](<a href="Ressources/The_Secret.pdf">)
 
 ## Usage
-  Have a look at our [documentation](./Man)
-  
+  Have a look at our [documentation](./man_3_printf)
+  Feel free to clone or fork this repository, if you have any problem 
+  you can contact us.
+
 ## Learn more 
   write in your terminal 
  `$ man 3 printf`.
@@ -98,13 +107,19 @@ Those are the format identifier's needed to write:
  
 ![Team Badges](./Images/ourbadges.svg)
   
-  
+<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="nicolas-bouté-0192b2112" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/nicolas-bout%C3%A9-0192b2112?trk=profile-badge">Nicolas Bouté</a></div>
 
-  
+
+<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="siham-b-523a36230" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/siham-b-523a36230?trk=profile-badge">Siham B.</a></div>
               
+<p><img src="Images/logo_linkd.png" alt="logo social media" width="42px"></p>
+
+
+
+ 
+
+
 </footer>
 
 </body>
-
-
 </html>

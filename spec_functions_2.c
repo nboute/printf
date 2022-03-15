@@ -124,7 +124,7 @@ int	handle_spec_X(void *ptr)
 
 	data = (format_t *)ptr;
 	data->is_signed = 0;
-	data->uppercase_flag = 1;
+	data->upcase_flag = 1;
 	if (data->long_flag == 1)
 	{
 		nb = (unsigned long)va_arg(data->args, unsigned long);

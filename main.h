@@ -90,7 +90,7 @@ typedef struct	format_s
 	unsigned char		width_flag;
 	unsigned char		hash_flag;
 	unsigned char		precision_flag;
-	unsigned char		uppercase_flag;
+	unsigned char		upcase_flag;
 	unsigned char		long_flag;
 	unsigned char		short_flag;
 	format_functions_t	fct_tab[15];
@@ -123,6 +123,6 @@ char	*_strncpy(char *dest, const char *src, int n);
 int		_strclen(const char *str, char c);
 char	*_strdup(char *str);
 char	*_strcat(char *dest, char *src);
-int print_string(va_list arg);
+int		print_string(va_list arg);
 
 #endif /* __MAIN_H__ */

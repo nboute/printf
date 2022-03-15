@@ -15,7 +15,7 @@ void	reset_flags(format_t *data)
 	data->width_flag = 0;
 	data->hash_flag = 0;
 	data->precision_flag = 0;
-	data->uppercase_flag = 0;
+	data->upcase_flag = 0;
 	data->long_flag = 0;
 	data->short_flag = 0;
 }
@@ -71,7 +71,7 @@ void	init_struct(format_t *data)
 	data->fct_tab[SPEC_u].spec = 'u';
 	data->fct_tab[SPEC_o].spec = 'o';
 	data->fct_tab[SPEC_x].spec = 'x';
-	data->fct_tab[SPEC_X].spec = 'x';
+	data->fct_tab[SPEC_X].spec = 'X';
 	data->fct_tab[SPEC_S].spec = 'S';
 	data->fct_tab[SPEC_p].spec = 'p';
 	data->fct_tab[SPEC_r].spec = 'r';
