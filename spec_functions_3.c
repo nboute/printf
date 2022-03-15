@@ -18,13 +18,13 @@ void	write_spec_S(char *s, char *s2)
 			s2[j++] = 'x';
 			s2[j] = s[i] / 16;
 			if (s2[j] >= 10)
-				s2[j] += 'a' - 10;
+				s2[j] += 'A' - 10;
 			else
 				s2[j] += '0';
 			j++;
 			s2[j] = s[i] % 16;
 			if (s2[j] >= 10)
-				s2[j] += 'a' - 10;
+				s2[j] += 'A' - 10;
 			else
 				s2[j] += '0';
 			j++;
