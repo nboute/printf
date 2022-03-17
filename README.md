@@ -34,10 +34,10 @@ work in programming at Holberton School.
 
 It will permit us to understand well variadic functions in C.
 
-Our secret for the _printf project is a well-structured departure
+Our secret for the _printf project is a well-structured departure.
 We have solved problems before start coding to know exactly what are we going to code.
 
-Then, start coding this project on the way Paris/Toulouse the 11th of March 2022
+Then, we started coding this project on the way Paris/Toulouse the 11th of March 2022
 In the train for reach, le "Salon de l'etudiant 2022 " to represent Holberton School and share our passion with futur students visiting the Salon Studyrama.
   
  
@@ -46,14 +46,14 @@ In the train for reach, le "Salon de l'etudiant 2022 " to represent Holberton Sc
 
 ## Steps
 
-First of all, we drawn a flowchart
-This allows us for a more global vision and to record tasks more quickly
+First of all, we drew a flowchart.
+This allows us to have a more global vision of the project and to record tasks more quickly
 
 ## Flowchart
 
 <p><img src="Images/flowchart.png" alt="flowchart" width="350 px"></p> 
 
-## Those are the format identifiers needed to write:
+## These are the format identifiers needed to write:
 
 %  | type |
 ---|------|
@@ -78,16 +78,6 @@ This allows us for a more global vision and to record tasks more quickly
 
 
 
-
-## Integers
-
-
-
-
-## Decimal to hexadecimal conversion
-
-
-
 ## Ressources
 
 * [_printf overview]()
@@ -100,10 +90,7 @@ This allows us for a more global vision and to record tasks more quickly
 
 ## Learn more 
   write in your terminal 
- `$ man 3 printf`.
-
-## Tests
-
+ `man 3 printf`.
 
 <footer>
  
