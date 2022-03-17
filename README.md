@@ -65,12 +65,14 @@ This allows us for a more global vision and to record tasks more quickly
 %u | unsigned integer		|
 %x | hex integer (lowercase)|
 %X | hex integer (uppercase)|
-%% | just the %				|
-
+%% | '%' Character				|
+%r | Reversed string      |
+%R | Rot13'd string       |
+%S | String with hex for non-printable characters|
+  
 ## We handle in this project
 --- the flags:
 --- the field width
---- the precision
 --- the length modifiers
 --- and custom conversion specifiers
 
